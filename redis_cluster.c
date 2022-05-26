@@ -1695,6 +1695,10 @@ PHP_METHOD(RedisCluster, clearlasterror) {
 
     RETURN_TRUE;
 }
+
+PHP_METHOD(RedisCluster, gettransferredbytes) {
+    CLUSTER_THROW_EXCEPTION("Not implemented", 0);
+}
 /* }}} */
 
 /* {{{ proto long RedisCluster::getOption(long option */

@@ -126,6 +126,8 @@ class RedisCluster {
 
     public function getset(string $key, mixed $value): string;
 
+    public function gettransferredbytes(): bool|int;
+
     public function hdel(string $key, string $member, string ...$other_members): int;
 
     public function hexists(string $key, string $member): bool;
